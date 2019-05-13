@@ -14,8 +14,8 @@ couch.listDatabases().then(function (dbs) {
     console.log(dbs);
 });
 
-const dbName = 'mycompany';
-const viewurl = '_design/get_grid/_view/new-view';
+const dbName = 'grid';
+const viewurl = 'http://admin:admin@localhost:5984/grid/_design/get_map/_view/grid';
 const app = express();
 
 app.set('view engine', 'ejs');
